@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./components/Header";
+import "./App.css";
+import Banner from "./components/Banner";
+import Blogs from "./components/Blogs";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import EC2 from "./pages/EC2";
+import ReactEssentails from "./pages/ReactEssentails";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Blogs />} />
+        <Route path="how-to-deploy-node-app-on-ec2" element={<EC2 />} />
+        <Route path="react-essentials" element={<ReactEssentails />} />
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;

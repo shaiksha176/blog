@@ -1,0 +1,30 @@
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+  text-align: center;
+  font-size: 50px;
+}
+
+p,
+li {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 5px;
+}
+
+.container {
+  width: 70%;
+  margin: 20px auto;
+}
+
+.container ol {
+  margin-top: 20px;
+}
+
+.container ol ul {
+  margin-left: 20px;
+}
+
+code {
+  background-color: #494f55;
+  color: white;
+  padding: 5px;
+}
