@@ -3,7 +3,7 @@ import React from "react";
 const EC2 = () => {
   return (
     <div className="container">
-      <h1>How to deploy node app on EC2</h1>
+      <h1>How to deploy node app on AWS EC2</h1>
       <p>
         Deploying a Node.js application on Amazon EC2 involves several steps.
         Here's a general outline of the process:
