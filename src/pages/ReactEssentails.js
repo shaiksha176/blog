@@ -7,7 +7,7 @@ const ReactEssentails = () => {
       <h1>React Essentials</h1>
       <ol>
         <li>
-          <b>Components -</b>
+          <b>Components</b>
           Components serve as the fundamental building blocks of React
           applications. Think of them as individual pieces of the user interface
           (UI).
